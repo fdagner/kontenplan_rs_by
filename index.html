@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Filtered List</title>
 </head>
@@ -59,15 +60,17 @@
             .kontenplan .flexrow {
                 flex-direction: column;
             }
+
             .kontenplan .kbtn {
-            height: 5vh;
-            font-size: 2rem;
-        }
-        .kontenplan #list-container {
-            min-width: 130px;
-            list-style: none;
-            font-size: 2rem;
-        }
+                height: 5vh;
+                font-size: 1.5rem;
+            }
+
+            .kontenplan #list-container {
+                min-width: 130px;
+                list-style: none;
+                font-size: 1.5rem;
+            }
         }
     </style>
     <div class="kontenplan">
@@ -84,7 +87,7 @@
                 <button class="kbtn aufwand" onclick="filterListByDigit(7)">Kontenklasse 7</button>
                 <button class="kbtn abschluss" onclick="filterListByDigit(8)">Kontenklasse 8</button>
             </div>
-            <ul id="list-container"></ul>
+           <div><ul id="list-container"></ul></div>
         </div>
     </div>
 
@@ -125,4 +128,5 @@
 
     </script>
 </body>
+
 </html>
