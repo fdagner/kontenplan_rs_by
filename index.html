@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Filtered List</title>
 </head>
 
 <body>
     <style>
+        .kontenplan {
+            max-width: 1200px;
+        }
+
         .kontenplan .hidden {
             display: none;
         }
@@ -38,9 +41,8 @@
         .kontenplan .flex {
             display: flex;
             flex-direction: column;
-            width: 75%;
+            width: 100%;
             min-width: 130px;
-            max-width: 500px;
         }
 
         .kontenplan .flexrow {
@@ -51,6 +53,12 @@
         .kontenplan #list-container {
             min-width: 130px;
             list-style: none;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .kontenplan .flexrow {
+                flex-direction: column;
+            }
         }
     </style>
     <div class="kontenplan">
@@ -108,5 +116,4 @@
 
     </script>
 </body>
-
 </html>
