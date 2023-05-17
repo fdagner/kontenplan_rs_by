@@ -43,8 +43,7 @@
             display: flex;
             flex-direction: column;
             width: 50%;
-            min-width: 120px;
-        }
+           }
 
         .kontenplan .flexrow {
             display: flex;
@@ -54,18 +53,36 @@
         .kontenplan #list-container {
             min-width: 150px;
             list-style: none;
-            font-size: 1.0rem;
+            font-size: 1rem;
         }
 
-        @media (orientation: portrait) {
-            .kontenplan .kbtn {
+        @media (max-width: 767px) and (orientation: portrait) {
+        .kontenplan .kbtn {
             height: 5vh;
             font-size: 1.5rem;
+            min-width: 200px;
         }
         .kontenplan #list-container {
-            font-size: 1.8rem;
+	    min-width: 150px;
+            font-size: 1.5rem;
+        }
+        .kontenplan .flex {
+	    width: 100%;
+             }
+}
+
+       @media (min-width: 767px) and (orientation: portrait) {
+            .kontenplan .kbtn {
+            height: 5vh;
+            font-size: 1rem;
+            min-width: 120px;
+        }
+        .kontenplan #list-container {
+            min-width: 150px;
+            font-size: 1rem;
         }
 }
+
     </style>
     <div class="kontenplan">
         <div class="flexrow">
