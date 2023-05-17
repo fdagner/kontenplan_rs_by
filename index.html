@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Kontenplan BwR</title>
+    <title>Filtered List</title>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
         }
 
         .kontenplan .kbtn {
-            height: 35px;
+            min-height: 35px;
         }
 
         .kontenplan .aktiv {
@@ -56,31 +56,19 @@
             font-size: 1rem;
         }
 
-        @media (max-width: 767px) and (orientation: portrait) {
+        @media (orientation: portrait) {
         .kontenplan .kbtn {
             height: 5vh;
             font-size: 1.5rem;
-            min-width: 200px;
+            min-width: 150px;
         }
         .kontenplan #list-container {
-	    min-width: 150px;
+	    min-width: 120px;
             font-size: 1.5rem;
         }
         .kontenplan .flex {
 	    width: 100%;
              }
-}
-
-       @media (min-width: 767px) and (orientation: portrait) {
-            .kontenplan .kbtn {
-            height: 5vh;
-            font-size: 1.2rem;
-            min-width: 120px;
-        }
-        .kontenplan #list-container {
-            min-width: 150px;
-            font-size: 1.2rem;
-        }
 }
 
     </style>
