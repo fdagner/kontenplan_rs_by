@@ -57,15 +57,23 @@
             font-size: 1.0rem;
         }
 
+        #kontenplan-dropdown {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+            }
+
         @media (orientation: portrait) {
             .kontenplan .kbtn {
-            height: 5vh;
-            font-size: 1.5rem;
+                height: 5vh;
+                font-size: 1.5rem;
+            }
+
+            .kontenplan #list-container {
+                font-size: 1.8rem;
+            }
+
         }
-        .kontenplan #list-container {
-            font-size: 1.8rem;
-        }
-}
     </style>
     <div class="kontenplan">
         <div class="flexrow">
@@ -122,6 +130,26 @@
                 listContainer.appendChild(listItem);
             }
         }
+        
+function handleDropdownChange() {
+    const selectedValue = document.getElementById('kontenplan-dropdown').value;
+
+    if (selectedValue === "all") {
+        showAllAccounts();
+    } else {
+        filterListByDigit(parseInt(selectedValue));
+    }
+}
+
+function showAllAccounts() {
+    // Ihre Logik, um alle Konten anzuzeigen
+    console.log("Alle Konten anzeigen");
+}
+
+function filterListByDigit(digit) {
+    // Ihre Logik, um die Liste nach der ausgewählten Kontenklasse zu filtern
+    console.log(`Kontenklasse ${digit} anzeigen`);
+}
 
     </script>
 </body>
